@@ -122,6 +122,15 @@ body {
   stroke-linejoin: round;
 }
 
+/* Inverted colors for Spot Forecast Archive icon */
+.archive-icon-inverted {
+  background: #d8d2c7;
+}
+
+.archive-icon-inverted svg {
+  stroke: var(--navy);
+}
+
 .tool-card h2 {
   margin: 0 0 12px;
   color: var(--navy);
