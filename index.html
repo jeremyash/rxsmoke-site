@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Rx Fire Smoke Tools — prescribed fire smoke reporting and superfog screening tools.">
+  <meta name="description" content="Rx Fire Smoke Tools — prescribed fire smoke reporting, spot forecasts, and superfog screening tools.">
 
   <title>Rx Fire Smoke Tools</title>
 
@@ -17,10 +17,10 @@
   <div class="site-container">
 
     <header class="site-header">
-        <div class="brand">RxSmoke</div>
-        <p class="subtitle">
-          Prescribed Fire Smoke Reporting &amp; Superfog Screening
-        </p>
+      <div class="brand">RxSmoke</div>
+      <p class="subtitle">
+        Prescribed Fire Smoke Reporting &amp; Superfog Screening
+      </p>
     </header>
 
     <main>
@@ -28,12 +28,14 @@
         <h1>Tools &amp; Reports</h1>
         <p>
           Access smoke model reporting tools, spot forecast screening,
-          superfog risk information, and previously generated reports.
+          superfog risk information, archived spot forecasts,
+          and previously generated reports.
         </p>
       </section>
 
       <section class="tool-grid" aria-label="Available tools">
 
+        <!-- Smoke Report Generator -->
         <a class="tool-card"
            href="https://r8-arm.shinyapps.io/smoker/"
            target="_blank"
@@ -56,6 +58,7 @@
           </span>
         </a>
 
+        <!-- Spot Screen & Superfog -->
         <a class="tool-card"
            href="https://r8-arm.shinyapps.io/spot_screen/"
            target="_blank"
@@ -79,6 +82,7 @@
           </span>
         </a>
 
+        <!-- Report Archive -->
         <a class="tool-card"
            href="https://reports.rxsmoke.org/"
            target="_blank"
@@ -102,6 +106,34 @@
 
           <span class="card-link">
             Browse Reports &rarr;
+          </span>
+        </a>
+
+        <!-- Spot Forecast Archive -->
+        <a class="tool-card"
+           href="https://spots.rxsmoke.org/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+          <div class="archive-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path d="M16 6H40L50 16V56H16Z"/>
+              <path d="M40 6V16H50"/>
+              <path d="M23 27H43"/>
+              <path d="M23 35H43"/>
+              <path d="M23 43H37"/>
+            </svg>
+          </div>
+
+          <h2>Spot Forecast Archive</h2>
+
+          <p>
+            Search archived NWS spot forecasts by project name,
+            national forest, and issuance date.
+          </p>
+
+          <span class="card-link">
+            Browse Forecasts &rarr;
           </span>
         </a>
 
