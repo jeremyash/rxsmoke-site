@@ -180,3 +180,64 @@ body {
     padding: 25px;
   }
 }
+
+/* External links are secondary to the RxSmoke application cards. */
+.external-links {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.external-links h2 {
+  margin: 0 0 4px;
+  color: var(--navy);
+  font-size: 1.35rem;
+}
+
+.external-links-note {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.external-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.external-links-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 18px;
+  background: #edf2f7;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--navy-light);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.external-links-grid a:hover {
+  background: #e3ebf3;
+  border-color: #a5b9cd;
+}
+
+.external-links-grid a:focus-visible {
+  outline: 3px solid #2b78c5;
+  outline-offset: 3px;
+}
+
+.external-links-grid a span {
+  flex-shrink: 0;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 600px) {
+  .external-links-grid {
+    grid-template-columns: 1fr;
+  }
+}
